@@ -1,0 +1,64 @@
+.details__header {
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+}
+.details__header--description {
+    font-weight: 700;
+    text-transform: capitalize ;
+    line-height: 1.7;
+}
+.details__info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+
+    padding-left: 15px;
+    border-left: 1px solid #eb6e4b;
+
+    @media(max-width: 375px) {
+        font-size: 12px;
+    }
+}
+
+.details__info--item {
+    margin: 5px;
+}
+
+.details__temp {
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: (5, 1fr);
+    grid-gap: 10px;
+
+    @media(max-width: 375px) {
+        font-size: 12px;
+    }
+}
+
+.details__temp--null {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.details__temp--morning {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.details__temp--day {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.details__temp--eve {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.details__temp--night {
+    grid-column: 5;
+    grid-row: 1;
+}

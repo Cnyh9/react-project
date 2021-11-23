@@ -1,0 +1,233 @@
+@import "./components/weather/details/details.scss";
+@import "./components/weather/weakly.scss";
+@import "./styles/pomodoro.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    // display: flex;
+}
+
+.myBtn {
+    margin-right: 10px;
+    padding: 10px 20px;
+
+    background: #90caf9;
+    border: none;
+    border-radius: 7px;
+    color: black;
+    cursor: pointer;
+
+    transition: background 0.2s ease-in-out;
+
+    &:hover {
+        background: darken($color: #90caf9, $amount: 5%);
+        filter: grayscale(10%);
+    }
+}
+
+#loadBtn {
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.customers {
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #90caf9;
+    margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+}
+.lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+}
+.lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+}
+.lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+}
+.lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+}
+.lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+}
+.lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+}
+.lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+}
+@keyframes lds-roller {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.login__form {
+    margin-top: 100px;
+    padding: 80px 50px;
+
+    // border: 2px solid #d8d8d8;
+    border-radius: 13px;
+    background: #ededed;
+    box-shadow: 15px 15px 35px #d8d8d8, -15px -15px 35px #ffffff,
+        inset 5px 5px 10px #d8d8d8, inset -5px -5px 10px #ffffff;
+}
+
+.login__header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.withoutLogin {
+    margin-top: 40px;
+    font-family: "Roboto";
+    text-decoration: none;
+    color: rgba(#000, 0.5);
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+//weather
+
+.current__wrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+}
+
+.weather__current {
+    margin-top: 10px;
+    max-width: 350px;
+}
+
+.weather__current-temp {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.weather__description {
+    border-left: 1px solid #eb6e4b;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+.weather__description-item {
+    display: flex;
+    margin: 5px 0;
+}

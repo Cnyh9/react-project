@@ -1,0 +1,267 @@
+.resume {
+    padding: 100px 70px;
+
+    @media(max-width: 1200px) {
+        padding: 60px 40px;
+    }
+
+    @media(max-width: 375px) {
+        padding: 30px 20px;
+    }
+}
+
+.resume__header {
+    position: relative;
+    margin-bottom: 150px;
+    
+    @media (max-width: 768px) {
+        margin-bottom: 100px;
+    }
+
+    @media (max-width: 375px) {
+        margin-bottom: 50px;
+    }
+}
+
+.header__title {
+    display: flex;
+
+    text-transform: uppercase;
+    font-size: 30px;
+    
+    h1 {
+        margin: -7px 0;
+
+        line-height: 1;
+        letter-spacing: 5px;
+        font-family: 'Jost', sans-serif;
+        font-weight: 400;
+
+        @media(max-width: 768px) {
+            font-size: 40px;
+        }
+
+        @media(max-width: 375px) {
+            font-size: 22px;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+        
+    }
+
+    div {
+        margin-left: 30px;
+        flex: 1;
+
+        border-bottom: 1px solid rgba(#000, .5);
+
+        @media(max-width: 375px) {
+            display: none;
+        }
+    }
+}
+
+.header__subtitle {
+    display: flex;
+    margin-top: 40px;
+
+    text-transform: uppercase;
+    font-size: 30px;
+
+    @media(max-width: 768px) {
+        margin-top: 25px;
+    }
+
+    @media(max-width: 375px) {
+        margin: 0;
+    }
+
+    div {
+        margin-right: 40px;
+
+        width: 120px;
+        border-top: 1px solid rgba(#000, .5);
+
+        @media(max-width: 375px) {
+            display: none;
+        }
+    }
+
+    h1 {
+        margin: -7px;
+
+        line-height: 1;
+        font-family: 'Jost', sans-serif;
+        font-weight: 400;
+
+        @media(max-width: 768px) {
+            font-size: 40px;
+        }
+
+        @media(max-width: 375px) {
+            font-size: 22px;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+    }
+}
+
+.header__info {
+    margin-top: 20px;
+    font-size: 26px;
+
+    @media(max-width: 1024px) {
+        font-size: 20px;
+    }
+    @media(max-width: 768px) {
+        font-size: 16px;
+    }
+    @media(max-width: 375px) {
+        margin-top: 10px;
+    }
+}
+
+.header__photo {
+    display: block;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    border-radius: 50%;
+
+    @media(max-width: 768px) {
+        right: 0;
+        height: 150px;
+        width: 150px;
+    }
+
+    @media(max-width: 768px) {
+        width: 70px;
+        height: 70px;
+    }
+    
+    
+}
+
+.resume__info {
+    display: flex;
+
+    @media(max-width: 375px) {
+        display: block;
+    }
+}
+
+.info__left {
+    padding-right: 40px;
+    flex: 1;
+
+    @media(max-width: 768px) {
+        padding-right: 20px;
+    }
+}
+
+.info__right {
+    padding-left: 40px;
+    width: 30%;
+
+    @media(max-width: 1024px) {
+        padding-left: 25px;
+    }
+    @media(max-width: 768px) {
+        padding-left: 20px;
+    }
+
+    @media(max-width: 375px) {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.profile {
+    @media(max-width: 375px) {
+        margin-bottom: 30px;
+    }
+}
+
+.profile__content {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
+
+    @media(max-width: 768px) {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+.contacts {
+    margin-bottom: 50px;
+
+    @media(max-width: 768px) {
+        margin-bottom: 30px;
+    }
+}
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+    @media(max-width: 768px) {
+        margin: 5px 0;
+    }
+
+    a {
+        margin-left: 20px;
+        text-decoration: none;
+        font-size: 18px;
+
+        @media(max-width: 768px) {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.education {
+    margin-bottom: 50px;
+
+    @media(max-width: 768px) {
+        margin-bottom: 30px;
+    }
+}
+
+.education__title {
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 600;
+
+    @media(max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.education__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    @media(max-width: 768px) {
+        font-size: 15px;
+        line-height: 2.5;
+    }
+}
+
+.education__date {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+
+    @media(max-width: 768px) {
+        font-size: 14px;
+    }
+}

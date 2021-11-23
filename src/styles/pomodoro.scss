@@ -1,0 +1,83 @@
+.pomodoro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: calc(100vh - 125px);
+}
+
+.pomodoro__wrapper {
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+
+    border-radius: 16px;
+
+    box-shadow: 0px 0px 500px rgb(126, 126, 126);
+}
+
+.pomodoro__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.header__content {
+    flex: 1;
+
+    text-align: center;
+    font-size: 18px;
+}
+
+.pomodoro__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    font-size: 30px;
+    color: rgba(126, 126, 126, 0.3);
+    background: none;
+    border: 1px solid rgba(rgb(126, 126, 126), 0.3);
+    border-radius: 13px;
+
+    cursor: pointer;
+
+    transition: all 0.2s linear;
+
+    &:hover {
+        color: darken(#fff, 30%);
+        border-color: darken(#fff, 30%);
+    }
+
+    &.--wide {
+        width: 90px;
+        font-size: 22px;
+        margin: 0 10px;
+
+        color: black;
+        border-color: none;
+    }
+}
+
+.pomodoro__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+    margin-bottom: 30px;
+}
+
+.content__timer {
+    flex: 1;
+    text-align: center;
+    font-size: 120px;
+}
+
+.pomodoro__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
